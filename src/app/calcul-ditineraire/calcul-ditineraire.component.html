@@ -1,0 +1,177 @@
+<div class="container">
+  <h1 id="hautdepage"> Calcul d'itinéraire</h1>
+  <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="pull-right" style="font-size:120%">
+         Partager |
+         <i class="fab fa-facebook-f "></i> |
+         <i class="fab fa-twitter "></i> | 
+         <i class="fas fa-envelope "></i>
+        </div>
+        <div class="panel panel-default" style="border-color: #164797;margin-top: 4%">
+            <div class="panel-body">
+              <p class="pull-right" style="font-style:italic">
+                Les champs procédés d'une * sont obligatoires
+              </p>       
+              <form class="form-inline" style="margin-top: 5%" #f="ngForm" (ngSubmit)="onSearch(f.value)">
+                <div class="row">
+                  <div class="form-group col-md-6">
+                      <i class="fas fa-map-marker-alt fa-2x "></i> &nbsp;
+                      <label style="font-size:120%"> Départ *</label>
+                    <div class="dropdown">
+                      <input class="form-control" placeholder="Adresse, lieu ou arret" for="depart" 
+                                name="adresseDepart" ngModel="" style="width:80%;border-color: #164797">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="depart" data-toggle="dropdown">
+                            <i class="fas fa-star etoile"></i> &nbsp;
+                            <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu" style=" width: 90%" >
+                            <div class="container" style=" width: 90%" >
+                              <div class="graycolor">
+                              <br>
+                                  <p> Rapide ! J'utulise mes favoris comme point de départ ou arrivée </p> 
+                              <br>
+                              </div>
+                              <p></p>
+                              <div>
+                                <p> Avec mon espace, j'accède rapidement à l'information qui me concerne.</p>
+                                <a>Découvrir ce service rapidement</a>
+                              </div>
+                            </div>
+                          </div>
+                    </div> 
+                  </div>
+                  <div class="form-group col-md-6">
+                      <i class="fas fa-map-marker fa-2x "></i> &nbsp;
+                      <label style="font-size:120%"> Arrivée *</label>
+                    <div class="dropdown">
+                      <input class="form-control" placeholder="Adresse, lieu ou arret" for="depart" 
+                                   name="adresseArrivee" ngModel="" style="width:80%;border-color: #164797">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="depart" data-toggle="dropdown">
+                            <i class="fas fa-star etoile"></i> &nbsp;
+                            <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu" style=" width: 90%" >
+                          <div class="container" style=" width: 90%" >
+                            <div class="graycolor">
+                            <br>
+                                <p> Rapide ! J'utulise mes favoris comme point de départ ou arrivée </p> 
+                            <br>
+                            </div>
+                            <p></p>
+                            <div>
+                              <p> Avec mon espace, j'accède rapidement à l'information qui me concerne.</p>
+                              <a>Découvrir ce service rapidement</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div> 
+                  </div>
+                </div>  
+                <br>
+                <div class="row">
+                  <div class="form-group col-md-3">
+                    <input class="form-control" type="text"  #dp="bsDatepicker" bsDatepicker
+                                [minDate]="minDate"   [maxDate]="maxDate" [(bsValue)]="bsValue"
+                                name="thedate"   ngModel=""
+                                [bsConfig]="{dateInputFormat: 'DD-MM-YYYY', containerClass: 'theme-blue'}" 
+                                style="border-color:#164797; width:80%">
+                    <span class="btn btn-default"  style="border-color:#164797" (click)="dp.toggle()"  
+                    [attr.aria-expanded]="dp.isOpen">
+                      <i class="fas fa-calendar-alt"></i>
+                  </span>
+                  </div>            
+                  <div class="form-group col-md-2">
+                            <select class="form-control" name="debut_OU_fin" ngModel="" style="border-color:#164797; width:100%">
+                              <option value="debut">Partir à </option>
+                              <option value="Fin">Arriver à</option>       
+                            </select>        
+                  </div>
+                  <div class="form-group col-md-1">
+                      <select class="form-control" name="heures" ngModel="h" style="border-color:#164797">
+                        <option *ngFor="let h of heures" >{{h}}</option>
+                      </select>        
+                  </div>
+                  <div class="form-group col-md-1">
+                      <select class="form-control" name="minutes" ngModel="m" style="border-color:#164797">
+                        <option *ngFor="let m of minutes" >{{m}}</option>   
+                      </select>        
+                  </div>
+                  <div class="form-group col-md-3">
+                      <select class="form-control" name="typeDeTrajet" style="border-color:#164797; width:100%">
+                        <option value="rapide">le plus rapide </option>
+                        <option value="MoinDeChangement">Le moins de changement</option>      
+                      </select>        
+                  </div>
+                </div>
+                <div class="row" style="margin-top:3%">
+                    <div class="dropdown " style="margin-left: 80%">
+                        <button  class="btn btn-primary" style="color:white">Rechercher</button>
+                          <button class="btn btn-primary dropdown-toggle" type="submit" id="depart" data-toggle="dropdown">
+                              <i class="fas fa-star etoile"></i> &nbsp;
+                              <span class="caret"></span>
+                          </button>
+                          <div class="dropdown-menu" style=" width: 90%" >
+                              <div class="container" style=" width: 90%" >
+                                <div class="graycolor">
+                                <br>
+                                    <p> Rapide ! J'utulise mes favoris comme point de départ ou arrivée </p> 
+                                <br>
+                                </div>
+                                <p></p>
+                                <div>
+                                  <p> Avec mon espace, j'accède rapidement à l'information qui me concerne.</p>
+                                  <a>Découvrir ce service rapidement</a>
+                                </div>
+                              </div>
+                            </div>
+                      </div> 
+                </div>
+              </form>
+            </div>
+        </div>
+        <div id="map" >
+        </div>
+        <div class="panel panel-default" style="margin-top: 3%">
+          <div class="panel-heading colorpanelheading" (click)="hidePannelBody()">
+              <i class="fas fa-angle-right" style="color:white"></i> Légende
+          </div>
+          <div class="panel-body" *ngIf="code">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-map-marker-alt fa-2x "></i><strong> Départ</strong> 
+                </div>
+                <div class="col-md-6 text-center">
+                   <i class="fas fa-map-marker fa-2x "></i> <strong> Arrivée</strong> 
+                </div>  
+            </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="checkbox">
+                <label><input type="checkbox" value="">
+                  <img src="assets/metro.png" style="width:35px"> <strong> Station de métro</strong></label>
+              </div>
+            </div> 
+            <div class="col-md-4">
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">
+                    <img src="assets/busjaune.jpg" style="width:60px"> <strong> Station de bus</strong></label>
+                </div>
+            </div>   
+            <div class="col-md-4">
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">
+                      <img src="assets/train.png" style="width:60px"> <strong> Station de train</strong></label>
+                </div>
+            </div>   
+          </div>
+      </div>
+        </div>
+        <div>
+            <button (click)="topFunction()" id="myBtn" >HAUT DE LA PAGE</button>
+        </div>
+      </div>
+     
+</div>
+</div>

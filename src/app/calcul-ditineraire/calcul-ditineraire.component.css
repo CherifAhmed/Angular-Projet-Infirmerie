@@ -1,0 +1,42 @@
+h1,i,button{
+    color: #164797;
+}
+.etoile{
+    color:white;
+}
+
+.graycolor{
+    color:#164797;
+    background-color: gainsboro;
+}
+.espace{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.caret{color:white}
+
+#map{
+    height: 600px;
+}
+.colorpanelheading{
+    background-color: #164797;
+    color:white;
+}
+#myBtn{
+    margin-left:90%;
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: burlywood; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 12px; /* Increase font size */
+  }
+ 
+  
+  
+  

@@ -1,0 +1,107 @@
+﻿/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/drop_examples.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+ /* common styling */
+.menu1 {
+float:left; width:569px; font-family: verdana, arial, sans-serif; font-size:14px; background-color:#FFFFFF;
+}
+.menu1 ul {
+padding:0;margin:0;list-style-type:none;
+}
+.menu1 ul li {
+float:left; position:relative;
+}
+.menu1 ul li a, .menu1 ul li a:visited {
+float:left; display:block; text-decoration:none;color:#ddf; line-height:25px; 
+}
+
+.menu1 ul li:hover {width:auto;}
+
+.menu1 ul li a.menu1one:hover {border-color:#FFFFFF; }
+.menu1 ul li a.menu1two:hover {border-color:#FFFFFF; }
+.menu1 ul li a.menu1three:hover {border-color:#FFFFFF; }
+.menu1 ul li a.menu1four:hover {border-color:#FFFFFF; }
+.menu1 ul li a.menu1five:hover {border-color:#FFFFFF; }
+.menu1 ul li a.menu1six:hover {border-color:#FFFFFF; }
+
+.menu1 ul li:hover a.menu1one {border-color:#FFFFFF; }
+.menu1 ul li:hover a.menu1two {border-color:#FFFFFF; }
+.menu1 ul li:hover a.menu1three {border-color:#FFFFFF; }
+.menu1 ul li:hover a.menu1four {border-color:#FFFFFF; }
+.menu1 ul li:hover a.menu1five {border-color:#FFFFFF; }
+.menu1 ul li:hover a.menu1six{border-color:#FFFFFF; }
+
+.menu1 ul li ul {
+display: none;
+}
+.menu1 table {
+margin:0; border-collapse:collapse; font-size:0px; position:absolute; top:0; left:0;
+}
+
+/* specific to non IE browsers */
+.menu1 ul li:hover ul {
+display:block;position:absolute;top:32px;margin-top:1px; left:0;width:154px;
+}
+.menu1 ul li:hover ul.endstop {
+left:-92px;
+}
+.menu1 ul li:hover ul li ul {
+display: none;
+}
+.menu1 ul li:hover ul li a {
+display:block;color:#000;height:auto;line-height:15px;padding:1px 16px; width:120px; border-bottom:0;
+}
+.menu1 ul li:hover ul li a.drop {
+
+}
+.menu1 ul li:hover ul li a:hover {
+color:#000;
+}
+.menu1 ul li:hover ul li a:hover.drop {
+
+}
+.menu1 ul li:hover ul li:hover ul {
+display:block; position:absolute; left:153px; top:-1px;
+}
+.menu1 ul li:hover ul li:hover ul.left {
+left:-153px;
+}
+
+
+
+/* specific to IE5.5 and IE6 browsers */
+.menu1 ul li a:hover ul {
+display:block;position:absolute;top:30px; t\op:33px; left:0; 
+}
+
+.menu1 ul li a:hover ul.endstop {
+left: -92px;
+}
+.menu1 ul li a:hover ul li a {
+display:block; color:#C0C0C0; height:1px; line-height:15px; padding-bottom:5px; width:185px; border:; border-bottom:0; background-color:#454E51;
+font-size:12px; padding-left:3px;
+}
+.menu1 ul li a:hover ul li a.drop {
+padding-bottom:4px;
+}
+.menu1 ul li a:hover ul li a ul {
+visibility:hidden; position:absolute; height:0; width:0;
+}
+.menu1 ul li a:hover ul li a:hover {
+color:#FFFFFF; 
+}
+.menu1 ul li a:hover ul li a:hover.drop {
+ background: #ccd url(images/bullet1.gif) no-repeat 3px 8px;
+}
+.menu1 ul li a:hover ul li a:hover ul {
+visibility:visible; position:absolute; top:0;color:#000; left:153px;
+}
+.menu1 ul li a:hover ul li a:hover ul.left {
+left:-153px;
+}

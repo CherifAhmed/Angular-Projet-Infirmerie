@@ -1,0 +1,62 @@
+.navbar-default {
+    /* Couleur de fond de la barre de navigation */
+    background-color: darkorange;
+  
+}
+.navbar-default .navbar-nav a{
+    color:black;
+}
+
+   
+.navbar-default .navbar-nav > .dropdown {
+    border-top-color: black;
+}
+
+/* Couleur utilisée pour un menu dépliant lorsqu'il est ouvert */
+
+.navbar-default .navbar-nav  a:hover,
+.navbar-default .navbar-nav  a:focus
+{
+ color: white;
+ background-color:#164797;
+}
+
+/* Couleur utilisée pour les liens lorsque la souris passe dessus */
+.navbar-default .navbar-nav > li > ul > li :hover,
+.navbar-default .navbar-nav > li > ul > li:focus {
+font-weight: bolder;
+}
+.facebook {
+    color: #164797;
+}
+.barrehaut{
+    font-size:120%;
+    font-weight: bold;
+}
+.chercher{
+    background-color: #164797;
+}
+.membre {
+    height: auto;
+    width: 200px;
+    color:#164797;
+    background-color: #C4D8F9;
+    font-size: 120%;       
+}
+.formcontrol{
+    border: lightcoral;
+}
+.footerform{
+    background-color: #C4D8F9;
+    width: 400px; 
+    height:50px;
+}
+.ecriture{
+    font-size: 120%
+}
+@media screen and (max-width: 900px)
+{ 
+    .contact{
+        display: none;
+    }
+}

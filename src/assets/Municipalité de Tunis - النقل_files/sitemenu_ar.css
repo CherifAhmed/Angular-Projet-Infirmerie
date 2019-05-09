@@ -1,0 +1,244 @@
+	#mainContainer{
+		font-family: Tahoma;
+		font-size:12px;
+		width:568px;
+		height:27px;
+		margin:0;
+		margin-bottom:-4px;
+		text-align:left;
+		background-color: #FFFFFF;
+	
+	}
+	
+	#dhtmlgoodies_menu img{
+		font-family: Tahoma;
+		font-size:12px;
+		border:0px;
+	}
+
+	/* End general styles for this example page */
+	/* General configuration CSS */
+	
+	#dhtmlgoodies_menu ul li ul{
+	display:none;
+	list-style-image:url(../../publish/images/px.gif);
+	
+			/* Needed to display ok in Opera */
+	}
+		
+	#dhtmlgoodies_menu{
+		font-family: Tahoma;
+		font-size:12px;
+		visibility:hidden;	
+	}
+	#dhtmlgoodies_menu ul{
+		font-family: Tahoma;
+		font-size:12px;
+		margin:0px;	/* No indent */
+		padding:0px;	/* No indent */
+	list-style-image:url(../../publish/images/px.gif);
+	
+	}
+
+	
+	#dhtmlgoodies_menu li{
+	font-family: Tahoma;
+		font-size:12px;
+		text-align:right;
+	list-style-image:url(../../publish/images/px.gif);
+	
+	}	
+	#dhtmlgoodies_menu a{
+		font-family: Tahoma;
+		font-size:12px;
+		margin:0px;
+		padding:0px;
+		
+
+	}
+	/* End general configuration CSS */
+	
+	
+	/* Cosmetic */
+	
+	/***********************************************************************
+		CSS - MENU BLOCKS
+	 	General rules for all menu blocks (group of sub items) 
+	***********************************************************************/
+	#dhtmlgoodies_menu ul{
+		font-family: Tahoma;
+		font-size:12px;
+		background-color: #FFFFFF; 
+		
+        filter:alpha(opacity=80); 
+        -moz-opacity:0.8;
+        opacity: 0.8;
+       -khtml-opacity: 0.8;
+	}
+		
+	#dhtmlgoodies_menu ul.menuBlock1{	/* Menu bar - main menu items */
+		font-family: Tahoma;
+		font-size:12px;
+		border:0px;
+		background-color:#FFFFFF;
+		overflow: hidden;
+	}
+	#dhtmlgoodies_menu ul.menuBlock2{	/* Menu bar - main menu items */
+		font-family: Tahoma;
+		font-size:12px;
+		border:0px;
+
+
+	}	
+	/***********************************************************************
+		CSS - MENU ITEMS
+	 	Here, you could assign rules to the menu items at different depths.
+	***********************************************************************/
+	/* General rules for all menu items */
+	#dhtmlgoodies_menu a{
+		font-family: tahoma;
+		font-size:11px;
+		color:#FFFFFF;
+		text-decoration:none;
+		margin-left:5px;
+		font-weight:bold;
+		line-height:20px;
+		
+	 }
+	
+	/*
+	Main menu items 
+	*/
+	
+	#dhtmlgoodies_menu .currentDepth1{
+	
+		
+	}
+	#dhtmlgoodies_menu .currentDepth1over{
+		font-family: Tahoma;
+		font-size:9px;
+	    color:#FFFFFF;
+		background-color:#FFFFFF;		
+		
+	}
+	#dhtmlgoodies_menu .currentDepth1 a{
+		font-family: Tahoma;
+		font-size:12px;
+		background-color:#FFFFFF;	
+		color:#FFFFFF;
+		font-weight:none;
+		margin-left:0px;
+        margin-bottom:0px;
+		margin-right:1px;
+		
+		
+	}
+	#dhtmlgoodies_menu .currentDepth1over a{	/* Text rules */
+		font-family: Tahoma;
+		font-size:12px;
+		background-color:#FFFFFF;	
+		color:#FFFFFF;
+		font-weight:none;
+        margin-bottom:0px;
+		margin-right:1px;
+		margin-left:0px;
+	}
+	
+	/*------------------------*/
+	
+	
+	/* Sub menu depth 1 */
+	#dhtmlgoodies_menu .currentDepth2{
+		font-family: Arial;
+		padding-right:2px;
+		padding-bottom:2px;
+		padding-top:2px;
+		font-size:12px;
+		color:#D5D5D5;
+		margin-left:-73px;
+		_margin-left:0;
+		background-color:#424D52;
+		width:165px !important;
+		filter:alpha(opacity=90); 
+        -moz-opacity:0.9;
+        opacity: 0.9;
+       -khtml-opacity: 0.9;
+				
+	}
+	#dhtmlgoodies_menu .currentDepth2over{
+		font-family: Arial;
+	    padding-right:2px;
+		padding-bottom:2px;
+		padding-top:2px;
+		font-size:12px;
+		color:#D5D5D5;
+		margin-left:-73px;
+		_margin-left:0;
+		background-color:#424D52;
+		width:165px !important;
+	}	
+	
+	#dhtmlgoodies_menu .currentDepth2over a{	/* Text rules */
+		font-family: Arial;
+		font-size:12px;
+		font-weight:none;
+		color:#D5D5D5;
+		margin-left:-73px;
+		_margin-left:0;
+		background-color:#424D52;
+		width:165px !important;
+	}	
+	
+	
+	
+	/*------------------------*/
+	
+	/* Sub menu depth 3 */
+	#dhtmlgoodies_menu .currentDepth3{
+		font-family: Arial;
+		padding-left:2px;
+		padding-bottom:2px;
+		padding-top:2px;
+
+		
+		font-size:12px;
+		color:#333333;
+		background-color:#424D52;
+		width:205px;
+	
+	}
+	#dhtmlgoodies_menu .currentDepth3over{
+			font-family: Arial;
+	  padding-left:2px;
+		padding-bottom:2px;
+		padding-top:2px;
+	
+		
+		font-size:12px;
+		color:#333333;
+		background-color:#424D52;
+		width:205px;
+	
+		
+	}
+	#dhtmlgoodies_menu .currentDepth3over a{	/* Text rules */
+		font-family: Arial;
+        		font-size:12px;
+		font-weight:none;
+		color:#333333;
+		background-color:#424D52;
+		width:205px;
+	}
+	
+	/*--------------------*/	
+	/* Sub menu depth 3 */
+	#dhtmlgoodies_menu .currentDepth4{
+		padding-right:2px;
+		
+		
+	}
+	#dhtmlgoodies_menu .currentDepth4over{
+		padding-right:2px;
+		background-color:#EBEDE3;
+	}	
+	

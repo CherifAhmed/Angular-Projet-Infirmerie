@@ -1,0 +1,9 @@
+CONST_PM_0 =7;
+PopMenu3=new Array(CONST_PM_0,CONST_PM_1,CONST_PM_2,CONST_PM_3,CONST_PM_4,CONST_PM_5,CONST_PM_6,CONST_PM_7,CONST_PM_8,CONST_PM_9,CONST_PM_10,CONST_PM_11,CONST_PM_12,CONST_PM_13,CONST_PM_14,CONST_PM_15,CONST_PM_16,CONST_PM_17,CONST_PM_18,CONST_PM_19,CONST_PM_20,CONST_PM_21,CONST_PM_22,CONST_PM_23,CONST_PM_24,CONST_PM_25,CONST_PM_26,CONST_PM_27,CONST_PM_28,CONST_PM_29,CONST_PM_30,CONST_PM_31,CONST_PM_32,CONST_PM_33,CONST_PM_34,CONST_PM_35,CONST_PM_36,CONST_PM_37,CONST_PM_38,CONST_PM_39,CONST_PM_40,CONST_PM_41);
+PopMenu3_1=new Array("","","",0,28,80);
+PopMenu3_2=new Array("Présentation","../content/article.asp?ID=4","",0,28,120);
+PopMenu3_3=new Array("Modules","../content/article.asp?ID=5","",0,20,110);
+PopMenu3_4=new Array("Structure","../content/article.asp?ID=6","",0,20,100);
+PopMenu3_5=new Array("Conception","../content/article.asp?ID=7","",0,20,100);
+PopMenu3_6=new Array("Hébergement","../content/article.asp?ID=8","",0,20,120);
+PopMenu3_7=new Array("Technologies","../content/article.asp?ID=9","",0,20,120);
